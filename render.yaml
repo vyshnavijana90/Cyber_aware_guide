@@ -1,6 +1,6 @@
 services:
   # 1. MySQL Database (Private Service)
-  - type: pservice
+  - type: pserv
     name: cyber-aware-db
     runtime: docker
     dockerImage: mysql:8.0
@@ -31,7 +31,7 @@ services:
       - key: SPRING_DATASOURCE_PASSWORD
         fromService:
           name: cyber-aware-db
-          type: pservice
+          type: pserv
           envVarKey: MYSQL_PASSWORD
       - key: JWT_SECRET
         generateValue: true
