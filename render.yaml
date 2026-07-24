@@ -2,7 +2,8 @@ services:
   # 1. MySQL Database (Private Service)
   - type: pserv
     name: cyber-aware-db
-    image: "mysql:8.0"
+    image:
+      url: "mysql:8.0"
     envVars:
       - key: MYSQL_DATABASE
         value: cyber_aware_db
