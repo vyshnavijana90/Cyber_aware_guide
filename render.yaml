@@ -2,6 +2,7 @@ services:
   # 1. MySQL Database (Private Service)
   - type: pserv
     name: cyber-aware-db
+    runtime: image
     image:
       url: "mysql:8.0"
     envVars:
