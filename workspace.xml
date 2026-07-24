@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d5e01145-1fdc-40a9-8449-3c4bf455091a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber-aware-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cyber-aware-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber-aware-backend/src/main/java/com/cyberaware/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cyber-aware-backend/src/main/java/com/cyberaware/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber-aware-backend/src/main/java/com/cyberaware/dto/request/RegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/cyber-aware-backend/src/main/java/com/cyberaware/dto/request/RegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber-aware-backend/src/main/java/com/cyberaware/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cyber-aware-backend/src/main/java/com/cyberaware/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber-aware-backend/src/main/java/com/cyberaware/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cyber-aware-backend/src/main/java/com/cyberaware/service/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber-aware-backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cyber-aware-backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber-aware-backend/target/classes/com/cyberaware/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cyber-aware-backend/target/classes/com/cyberaware/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyber-aware-backend/target/classes/com/cyberaware/controller/ReportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cyber-aware-backend/target/classes/com/cyberaware/controller/ReportController.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/cyber-aware-backend/demo">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.2440844690792185" />
+      <entry key="MS500" value="3.217524414109966" />
+      <entry key="S2" value="8.468090984204283" />
+      <entry key="S5" value="13.635988971239035" />
+      <entry key="S10" value="18.255199000611658" />
+      <entry key="S30" value="24.63672514244855" />
+      <entry key="S60" value="27.066401805582693" />
+      <entry key="M2" value="28.463095695856346" />
+      <entry key="M5" value="29.367405555321945" />
+      <entry key="M10" value="29.68064230553634" />
+      <entry key="M15" value="29.78640805723971" />
+      <entry key="M30" value="29.89285892893346" />
+      <entry key="H1" value="29.946342870563658" />
+      <entry key="H2" value="29.973149746799784" />
+      <entry key="H4" value="29.986569446270234" />
+      <entry key="D1" value="29.99776082018481" />
+      <entry key="W1" value="29.999680098693677" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.2017063873261618" />
+      <entry key="MS500" value="3.195172437080325" />
+      <entry key="S2" value="8.453264255126584" />
+      <entry key="S5" value="13.625824131356087" />
+      <entry key="S10" value="18.247212753688093" />
+      <entry key="S30" value="24.632330117407406" />
+      <entry key="S60" value="27.06383723728554" />
+      <entry key="M2" value="28.46170455968238" />
+      <entry key="M5" value="29.366820449429206" />
+      <entry key="M10" value="29.680344750890157" />
+      <entry key="M15" value="29.786208558611875" />
+      <entry key="M30" value="29.8927586107846" />
+      <entry key="H1" value="29.946292568449277" />
+      <entry key="H2" value="29.97312455987821" />
+      <entry key="H4" value="29.986556843830268" />
+      <entry key="D1" value="29.997758718529926" />
+      <entry key="W1" value="29.99967979842667" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3EfpRopspCJjvZzldLQ25oDJ9Re" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.CyberAwareApplication.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Vyshnavi/Downloads/cyber-aware-guide-main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5e01145-1fdc-40a9-8449-3c4bf455091a" name="Changes" comment="" />
+      <created>1780579473789</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1780579473789</updated>
+      <workItem from="1780579475172" duration="2112000" />
+      <workItem from="1781591819823" duration="2108000" />
+      <workItem from="1781952061479" duration="303000" />
+      <workItem from="1784773463438" duration="23000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
