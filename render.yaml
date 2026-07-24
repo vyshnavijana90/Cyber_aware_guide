@@ -1,0 +1,50 @@
+services:
+  # 1. MySQL Database (Private Service)
+  - type: pservice
+    name: cyber-aware-db
+    runtime: docker
+    dockerImage: mysql:8.0
+    envVars:
+      - key: MYSQL_DATABASE
+        value: cyber_aware_db
+      - key: MYSQL_USER
+        value: db_user
+      - key: MYSQL_PASSWORD
+        generateValue: true
+      - key: MYSQL_ROOT_PASSWORD
+        generateValue: true
+    disk:
+      name: db-data
+      mountPath: /var/lib/mysql
+      sizeGB: 5
+
+  # 2. Spring Boot Backend (Web Service)
+  - type: web
+    name: cyber-aware-backend
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:mysql://cyber-aware-db:3306/cyber_aware_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      - key: SPRING_DATASOURCE_USERNAME
+        value: db_user
+      - key: SPRING_DATASOURCE_PASSWORD
+        fromService:
+          name: cyber-aware-db
+          type: pservice
+          envVarKey: MYSQL_PASSWORD
+      - key: JWT_SECRET
+        generateValue: true
+
+  # 3. TanStack Start Frontend (Web Service)
+  - type: web
+    name: cyber-aware-frontend
+    runtime: node
+    rootDir: cyber-aware-guide-main
+    buildCommand: npm install && npm run build
+    startCommand: node .output/server/index.mjs
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: VITE_API_URL
+        sync: false
