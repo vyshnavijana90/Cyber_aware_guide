@@ -3,6 +3,8 @@ package com.cyberaware.controller;
 import com.cyberaware.dto.request.AdminLoginRequest;
 import com.cyberaware.dto.request.LoginRequest;
 import com.cyberaware.dto.request.RegisterRequest;
+import com.cyberaware.dto.request.VerifyEmailRequest;
+import com.cyberaware.dto.response.ApiResponse;
 import com.cyberaware.dto.response.AuthResponse;
 import com.cyberaware.service.AuthService;
 import jakarta.validation.Valid;
@@ -16,6 +18,8 @@ import org.springframework.web.bind.annotation.*;
 public class AuthController {
 
     private final AuthService authService;
+
+
 
     // POST /api/auth/register
     @PostMapping("/register")

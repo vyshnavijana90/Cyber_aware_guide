@@ -34,10 +34,10 @@ public class GlobalExceptionHandler {
                 .body(ApiResponse.error(ex.getMessage()));
     }
 
-    @ExceptionHandler(BadCredentialsException.class)
-    public ResponseEntity<ApiResponse> handleBadCredentialsException(BadCredentialsException ex) {
+    @ExceptionHandler(org.springframework.security.core.AuthenticationException.class)
+    public ResponseEntity<ApiResponse> handleAuthenticationException(org.springframework.security.core.AuthenticationException ex) {
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
-                .body(ApiResponse.error("Invalid email or password"));
+                .body(ApiResponse.error("Incorrect email or password."));
     }
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
@@ -58,9 +58,17 @@ public class GlobalExceptionHandler {
                 .body(ApiResponse.error("File size exceeds the maximum limit of 10MB"));
     }
 
+    @ExceptionHandler(EmailVerificationException.class)
+    public ResponseEntity<ApiResponse> handleEmailVerificationException(EmailVerificationException ex) {
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                .body(ApiResponse.error(ex.getMessage()));
+    }
+
     @ExceptionHandler(Exception.class)
     public ResponseEntity<ApiResponse> handleGlobalException(Exception ex) {
+        // Log detailed exception internally for debugging
+        org.slf4j.LoggerFactory.getLogger(GlobalExceptionHandler.class).error("Unexpected server exception: ", ex);
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
-                .body(ApiResponse.error("An unexpected error occurred: " + ex.getMessage()));
+                .body(ApiResponse.error("Something went wrong. Please try again later."));
     }
 }

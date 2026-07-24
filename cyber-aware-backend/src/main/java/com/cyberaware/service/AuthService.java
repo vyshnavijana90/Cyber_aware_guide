@@ -3,6 +3,7 @@ package com.cyberaware.service;
 import com.cyberaware.dto.request.AdminLoginRequest;
 import com.cyberaware.dto.request.LoginRequest;
 import com.cyberaware.dto.request.RegisterRequest;
+import com.cyberaware.dto.request.VerifyEmailRequest;
 import com.cyberaware.dto.response.AuthResponse;
 import com.cyberaware.entity.User;
 import com.cyberaware.exception.EmailAlreadyExistsException;
@@ -24,17 +25,20 @@ public class AuthService {
     private final PasswordEncoder passwordEncoder;
     private final AuthenticationManager authenticationManager;
     private final JwtTokenProvider jwtTokenProvider;
+    private final EmailVerificationService emailVerificationService;
 
     public AuthResponse register(RegisterRequest request) {
         if (userRepository.existsByEmail(request.getEmail())) {
             throw new EmailAlreadyExistsException("Email already registered: " + request.getEmail());
         }
 
+        // Send safety welcome email using system configured SMTP settings
+        emailVerificationService.sendSafetyEmail(request.getName(), request.getEmail());
+
         User user = User.builder()
                 .name(request.getName())
                 .email(request.getEmail())
                 .password(passwordEncoder.encode(request.getPassword()))
-                .phoneNumber(request.getPhoneNumber())
                 .build();
 
         User savedUser = userRepository.save(user);
@@ -61,7 +65,7 @@ public class AuthService {
                 .findFirst().orElse("ROLE_USER");
 
         User user = userRepository.findByEmail(request.getEmail())
-                .orElseThrow(() -> new RuntimeException("User not found"));
+                .orElseThrow(() -> new org.springframework.security.authentication.BadCredentialsException("Incorrect email or password."));
 
         return AuthResponse.builder()
                 .token(token)
